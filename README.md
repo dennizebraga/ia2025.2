@@ -16,25 +16,27 @@ python com_fine_tuning.py
 ```
 ## Em execução, o algoritmo exibirá, a cada geração:
 
-O número da geração
-O fitness do melhor indivíduo
-O estado atual do puzzle
+O número da geração, o fitness do melhor indivíduo, o estado atual do puzzle
 
 Quando o fine tuning encontrar um estado melhor, aparecerá uma mensagem indicando a melhora.
 
 ## Output Sem Fine Tuning
+```python
 O GA melhora o fitness aos poucos, mas geralmente não chega a 0:
 Generation 0 | Best fitness: 6 | State: [...]
 Generation 1 | Best fitness: 6 | State: [...]
 ...
 Generation 15 | Best fitness: 1 | State: [...]
+```
 
 ## Output Com Fine Tuning
 A Busca Local reduz o fitness rapidamente e permite que o GA atinja o objetivo:
+```python
 Busca Local melhorou o fitness de 8 para 4!
 Generation 0 | Best fitness: 4 | State: [...]
 
 Busca Local melhorou o fitness de 3 para 0!
 Generation 1 | Best fitness: 0 | State: [...]
 Goal reached!
+```
 
